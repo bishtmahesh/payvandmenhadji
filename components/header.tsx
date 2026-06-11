@@ -10,14 +10,23 @@ import { conditionsNav, treatmentsNav } from "@/data/site-content";
 type NavItem = {
   label: string;
   href?: string;
-  // Display-only menu (desktop): items are shown but do not link anywhere.
-  menu?: { label: string }[];
+  // Menu items with an href link; those without are display-only.
+  menu?: { label: string; href?: string }[];
 };
+
+// Treatment pages that are finished and safe to link from the dropdown.
+const linkedTreatments = ["/treatments/gum-grafting", "/treatments/dental-implants"];
 
 const navItems: NavItem[] = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
-  { label: "Treatments", menu: treatmentsNav.map((t) => ({ label: t.label })) },
+  {
+    label: "Treatments",
+    menu: treatmentsNav.map((t) => ({
+      label: t.label,
+      href: linkedTreatments.includes(t.href) ? t.href : undefined,
+    })),
+  },
   { label: "Conditions", menu: conditionsNav.map((c) => ({ label: c.label })) },
   { label: "For Dentists", href: "/for-dentists" },
 ];
@@ -82,11 +91,21 @@ export function Header() {
                 </span>
                 <div className="invisible absolute left-1/2 top-full z-50 -translate-x-1/2 pt-4 opacity-0 transition duration-200 group-hover/menu:visible group-hover/menu:opacity-100 group-focus-within/menu:visible group-focus-within/menu:opacity-100">
                   <div className="w-72 overflow-hidden rounded-2xl border border-[#dacbb8] bg-[#fbf7ef] p-2 shadow-[0_24px_80px_rgba(6,20,38,0.18)]">
-                    {item.menu.map((sub) => (
-                      <span key={sub.label} className="block cursor-default rounded-xl px-4 py-2.5 text-sm leading-snug text-[#0b1422]">
-                        {sub.label}
-                      </span>
-                    ))}
+                    {item.menu.map((sub) =>
+                      sub.href ? (
+                        <Link
+                          key={sub.label}
+                          href={sub.href}
+                          className="focus-ring block rounded-xl px-4 py-2.5 text-sm leading-snug text-[#0b1422] transition hover:bg-[#eee2d1]"
+                        >
+                          {sub.label}
+                        </Link>
+                      ) : (
+                        <span key={sub.label} className="block cursor-default rounded-xl px-4 py-2.5 text-sm leading-snug text-[#746f68]">
+                          {sub.label}
+                        </span>
+                      ),
+                    )}
                   </div>
                 </div>
               </div>
