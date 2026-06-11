@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Clock, Handshake, Layers, MessageCircle, ShieldCheck, Smile, Utensils } from "lucide-react";
+import { Activity, ClipboardCheck, Clock, HeartPulse, Layers, MessageCircle, ScanLine, ShieldCheck, Smile, Utensils } from "lucide-react";
 import { LuxuryAccordion } from "@/components/accordion";
 import { Button } from "@/components/button";
-import { DarkCta, ProcessSteps } from "@/components/content-blocks";
+import { DarkCta } from "@/components/content-blocks";
 import { IconCards } from "@/components/icon-cards";
 import { Container, Eyebrow, Section } from "@/components/layout";
 import { EditorialImagePlaceholder } from "@/components/placeholders";
@@ -80,9 +80,12 @@ export default function DentalImplantsPage() {
         <Container>
           <Reveal className="mb-12 max-w-3xl">
             <Eyebrow>Advantages</Eyebrow>
-            <h2 className="font-display text-5xl leading-tight text-[#0b1422] sm:text-6xl">
+            <h2 className="font-display text-4xl leading-tight text-[#0b1422] sm:text-5xl">
               Why patients choose implants.
             </h2>
+            <p className="mt-5 text-lg leading-8 text-[#34383a]">
+              A replacement that looks, feels and functions like a natural tooth — and protects the bone beneath it.
+            </p>
           </Reveal>
           <Reveal>
             <IconCards
@@ -146,20 +149,35 @@ export default function DentalImplantsPage() {
         <Container>
           <Reveal className="mb-12 max-w-2xl">
             <Eyebrow>What To Expect</Eyebrow>
-            <h2 className="font-display text-5xl leading-tight text-[#0b1422] sm:text-6xl">
+            <h2 className="font-display text-4xl leading-tight text-[#0b1422] sm:text-5xl">
               A planned, staged pathway.
             </h2>
+            <p className="mt-5 text-lg leading-8 text-[#34383a]">
+              From your first consultation to the final crown — here is how treatment unfolds.
+            </p>
           </Reveal>
-          <Reveal>
-            <ProcessSteps
-              items={[
-                "Consultation and 3D assessment",
-                "Digital treatment plan",
-                "Implant placement",
-                "Healing and integration",
-                "Final crown and review",
-              ]}
-            />
+          <Reveal className="grid gap-5 md:grid-cols-5">
+            {[
+              { step: "01", label: "Consultation and 3D assessment", icon: ScanLine },
+              { step: "02", label: "Digital treatment plan", icon: ClipboardCheck },
+              { step: "03", label: "Implant placement", icon: Activity },
+              { step: "04", label: "Healing and integration", icon: HeartPulse },
+              { step: "05", label: "Final crown and review", icon: Smile },
+            ].map((s) => {
+              const Icon = s.icon;
+              return (
+                <article
+                  key={s.step}
+                  className="group border border-[#dacbb8] bg-[#fbf7ef]/72 p-6 transition duration-500 hover:-translate-y-1 hover:border-[#b88742]/55 hover:bg-[#fbf7ef]"
+                >
+                  <div className="mb-8 flex items-center justify-between">
+                    <Icon className="size-6 text-[#b88742] transition duration-300 group-hover:translate-x-1" strokeWidth={1.5} />
+                    <span className="font-display text-3xl text-[#b88742]">{s.step}</span>
+                  </div>
+                  <p className="text-base leading-7 text-[#34383a]">{s.label}</p>
+                </article>
+              );
+            })}
           </Reveal>
         </Container>
       </Section>
