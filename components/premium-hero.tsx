@@ -14,7 +14,9 @@ type PremiumHeroProps = {
 export function PremiumHero({ preheading, title, children, home = false, image, imageClassName }: PremiumHeroProps) {
   const heroHeight = "min-h-[100svh]";
   const defaultImage = "/images/dr-payvand-hero.png";
-  const defaultCrop = "origin-[72%_38%] -translate-y-[20%] scale-125 object-right-top";
+  // Mobile: keep Dr Menhadji on the right (object-[82%]). Desktop (lg+): crafted crop.
+  const defaultCrop =
+    "object-[82%_28%] scale-110 lg:origin-[72%_38%] lg:-translate-y-[20%] lg:scale-125 lg:object-right-top";
 
   return (
     <section className={`relative isolate overflow-hidden bg-[#061426] ${heroHeight}`}>

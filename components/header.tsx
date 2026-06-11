@@ -144,21 +144,19 @@ export function Header() {
                       strokeWidth={2}
                     />
                   </button>
-                  <div className={`grid transition-all duration-300 ${openSection === item.label ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}>
-                    <div className="overflow-hidden">
-                      <div className="grid gap-1 pb-3 pl-4 pr-2">
-                        {item.children.map((sub) => (
-                          <Link
-                            key={sub.href}
-                            href={sub.href}
-                            className="focus-ring rounded-xl px-4 py-2.5 text-sm leading-snug text-[#34383a] transition hover:bg-[#eee2d1] hover:text-[#0b1422]"
-                          >
-                            {sub.label}
-                          </Link>
-                        ))}
-                      </div>
+                  {openSection === item.label ? (
+                    <div className="grid gap-1 pb-3 pl-4 pr-2">
+                      {item.children.map((sub) => (
+                        <Link
+                          key={sub.href}
+                          href={sub.href}
+                          className="focus-ring rounded-xl px-4 py-2.5 text-sm leading-snug text-[#34383a] transition hover:bg-[#eee2d1] hover:text-[#0b1422]"
+                        >
+                          {sub.label}
+                        </Link>
+                      ))}
                     </div>
-                  </div>
+                  ) : null}
                 </div>
               ) : (
                 <Link
