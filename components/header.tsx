@@ -15,7 +15,7 @@ type NavItem = {
 };
 
 // Treatment pages that are finished and safe to link from the dropdown.
-const linkedTreatments = ["/treatments/gum-grafting", "/treatments/dental-implants"];
+const linkedTreatments = ["/treatments/dental-implants"];
 
 const navItems: NavItem[] = [
   { label: "Home", href: "/" },
@@ -31,12 +31,18 @@ const navItems: NavItem[] = [
   { label: "For Dentists", href: "/for-dentists" },
 ];
 
-// Mobile menu — fully linked to each page.
+// Mobile menu. Sub-items link only when finished (see linkedTreatments); the rest are display-only.
 const mobileNav = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
-  { label: "Treatments", children: treatmentsNav },
-  { label: "Conditions", children: conditionsNav },
+  {
+    label: "Treatments",
+    children: treatmentsNav.map((t) => ({
+      label: t.label,
+      href: linkedTreatments.includes(t.href) ? t.href : undefined,
+    })),
+  },
+  { label: "Conditions", children: conditionsNav.map((c) => ({ label: c.label, href: undefined as string | undefined })) },
   { label: "For Dentists", href: "/for-dentists" },
 ];
 
@@ -165,15 +171,21 @@ export function Header() {
                   </button>
                   {openSection === item.label ? (
                     <div className="grid gap-1 pb-3 pl-4 pr-2">
-                      {item.children.map((sub) => (
-                        <Link
-                          key={sub.href}
-                          href={sub.href}
-                          className="focus-ring rounded-xl px-4 py-2.5 text-sm leading-snug text-[#34383a] transition hover:bg-[#eee2d1] hover:text-[#0b1422]"
-                        >
-                          {sub.label}
-                        </Link>
-                      ))}
+                      {item.children.map((sub) =>
+                        sub.href ? (
+                          <Link
+                            key={sub.label}
+                            href={sub.href}
+                            className="focus-ring rounded-xl px-4 py-2.5 text-sm leading-snug text-[#34383a] transition hover:bg-[#eee2d1] hover:text-[#0b1422]"
+                          >
+                            {sub.label}
+                          </Link>
+                        ) : (
+                          <span key={sub.label} className="block rounded-xl px-4 py-2.5 text-sm leading-snug text-[#746f68]">
+                            {sub.label}
+                          </span>
+                        ),
+                      )}
                     </div>
                   ) : null}
                 </div>
