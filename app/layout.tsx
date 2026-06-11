@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import { MobileCtaBar } from "@/components/mobile-cta-bar";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.payvandmenhadji.com"),
@@ -44,6 +45,9 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        {/* Spacer so the sticky mobile CTA bar doesn't cover footer content */}
+        <div className="h-16 lg:hidden" aria-hidden />
+        <MobileCtaBar />
       </body>
     </html>
   );

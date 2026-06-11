@@ -20,13 +20,13 @@ export function BrandLockup({ light = false, compact = false }: { light?: boolea
   return (
     <Link
       href="/"
-      className="focus-ring flex shrink-0 items-center gap-3"
+      className="focus-ring flex min-w-0 items-center gap-3"
       aria-label="Dr Payvand Menhadji home"
     >
       <Monogram compact />
       <span className="grid min-w-0">
         <span
-          className={`font-display leading-none tracking-[0.13em] ${
+          className={`truncate font-display leading-none tracking-[0.13em] ${
             compact ? "text-[0.78rem] sm:text-[0.9rem]" : "text-[0.86rem] sm:text-[1rem]"
           } ${light ? "text-[#f8f2e8]" : "text-[#0b1422]"}`}
         >
