@@ -8,57 +8,82 @@ type PremiumHeroProps = {
   children?: ReactNode;
   home?: boolean;
   image?: string;
-  imageClassName?: string;
 };
 
-export function PremiumHero({ preheading, title, children, home = false, image, imageClassName }: PremiumHeroProps) {
-  const heroHeight = "min-h-[100svh]";
-  const defaultImage = "/images/dr-payvand-hero.png";
-  // Mobile: keep Dr Menhadji on the right (object-[82%]). Desktop (lg+): crafted crop.
-  const defaultCrop =
-    "object-[82%_28%] scale-110 lg:origin-[72%_38%] lg:-translate-y-[20%] lg:scale-125 lg:object-right-top";
+export function PremiumHero({ preheading, title, children, home = false, image }: PremiumHeroProps) {
+  const img = image ?? "/images/dr-payvand-hero.png";
 
   return (
-    <section className={`relative isolate overflow-hidden bg-[#061426] ${heroHeight}`}>
-      <Image
-        src={image ?? defaultImage}
-        alt="Dr Payvand Menhadji"
-        fill
-        priority={home}
-        sizes="100vw"
-        className={`object-cover ${imageClassName ?? defaultCrop}`}
-      />
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(6,20,38,0.82)_0%,rgba(6,20,38,0.7)_30%,rgba(6,20,38,0.36)_55%,rgba(6,20,38,0.05)_100%)]" />
-      <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(6,20,38,0.56)_0%,rgba(6,20,38,0.08)_42%,rgba(6,20,38,0.16)_100%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_35%,rgba(215,179,111,0.17),transparent_31%)]" />
-
-      <div
-        className="relative z-10 mx-auto flex min-h-[100svh] max-w-7xl items-end px-5 pb-24 pt-48 sm:px-8 sm:pb-28 sm:pt-44 lg:pb-32"
-      >
-        <div className={`reveal ${home ? "max-w-3xl" : "max-w-4xl"}`}>
+    <section className="relative isolate overflow-hidden bg-[#061426]">
+      {/* MOBILE: stacked image card + text card (no overlap) */}
+      <div className="lg:hidden">
+        <div className="relative h-[44svh] w-full overflow-hidden">
+          <Image
+            src={img}
+            alt="Dr Payvand Menhadji"
+            fill
+            priority={home}
+            sizes="100vw"
+            className="scale-105 object-cover object-[78%_18%]"
+          />
+          <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(6,20,38,0.72)_0%,transparent_55%)]" />
+          <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#d7b36f]/60 to-transparent" />
+        </div>
+        <div className="px-5 pb-14 pt-9 sm:px-8">
           {preheading ? (
-            <p className="mb-5 text-xs font-semibold uppercase tracking-[0.24em] text-[#d7b36f]">
-              {preheading}
-            </p>
+            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#d7b36f]">{preheading}</p>
           ) : null}
           <h1
             className={`font-display tracking-normal text-[#f8f2e8] ${
-              home
-                ? "max-w-[44rem] text-[2.25rem] leading-[1.08] sm:text-[2.9rem] lg:text-[3.5rem]"
-                : "max-w-5xl text-[2.9rem] leading-[1.05] sm:text-[4rem] lg:text-[4.75rem]"
+              home ? "text-[2.1rem] leading-[1.12] sm:text-[2.6rem]" : "text-[2.2rem] leading-[1.08] sm:text-[2.9rem]"
             }`}
           >
             {title}
           </h1>
           {home ? (
-            <div className="mt-6 -ml-5 sm:-ml-7">
+            <div className="mt-5 -ml-4">
               <SignatureMark />
             </div>
           ) : null}
-          {children ? <div className={home ? "mt-6" : "mt-7"}>{children}</div> : null}
+          {children ? <div className="mt-6">{children}</div> : null}
         </div>
       </div>
-      <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#d7b36f]/60 to-transparent" />
+
+      {/* DESKTOP (lg+): full-bleed overlay hero */}
+      <div className="relative hidden min-h-[100svh] lg:block">
+        <Image
+          src={img}
+          alt="Dr Payvand Menhadji"
+          fill
+          priority={home}
+          sizes="100vw"
+          className="origin-[72%_38%] -translate-y-[20%] scale-125 object-cover object-right-top"
+        />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(6,20,38,0.82)_0%,rgba(6,20,38,0.7)_30%,rgba(6,20,38,0.36)_55%,rgba(6,20,38,0.05)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(6,20,38,0.56)_0%,rgba(6,20,38,0.08)_42%,rgba(6,20,38,0.16)_100%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_35%,rgba(215,179,111,0.17),transparent_31%)]" />
+        <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-7xl items-end px-5 pb-32 pt-48 sm:px-8">
+          <div className={`reveal ${home ? "max-w-3xl" : "max-w-4xl"}`}>
+            {preheading ? (
+              <p className="mb-5 text-xs font-semibold uppercase tracking-[0.24em] text-[#d7b36f]">{preheading}</p>
+            ) : null}
+            <h1
+              className={`font-display tracking-normal text-[#f8f2e8] ${
+                home ? "max-w-[44rem] text-[3.5rem] leading-[1.08]" : "max-w-5xl text-[4.75rem] leading-[1.05]"
+              }`}
+            >
+              {title}
+            </h1>
+            {home ? (
+              <div className="mt-6 -ml-7">
+                <SignatureMark />
+              </div>
+            ) : null}
+            {children ? <div className={home ? "mt-6" : "mt-7"}>{children}</div> : null}
+          </div>
+        </div>
+        <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#d7b36f]/60 to-transparent" />
+      </div>
     </section>
   );
 }
