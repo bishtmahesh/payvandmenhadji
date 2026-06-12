@@ -23,10 +23,10 @@ export function PremiumHero({ preheading, title, children, home = false, image }
           fill
           priority={home}
           sizes="100vw"
-          className="scale-105 object-cover object-[78%_8%]"
+          className="-translate-y-[28px] scale-105 object-cover object-[78%_4%]"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(6,20,38,0.92)_0%,rgba(6,20,38,0.55)_28%,rgba(6,20,38,0)_55%)]" />
-        <div className="absolute inset-x-0 bottom-0 px-5 pb-3 sm:px-8">
+        <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(6,20,38,0.94)_0%,rgba(6,20,38,0.55)_30%,rgba(6,20,38,0)_56%)]" />
+        <div className="absolute inset-x-0 bottom-0 px-5 pb-0 sm:px-8">
           {preheading ? (
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#d7b36f]">{preheading}</p>
           ) : null}
