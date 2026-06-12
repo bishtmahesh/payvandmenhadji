@@ -15,21 +15,19 @@ export function PremiumHero({ preheading, title, children, home = false, image }
 
   return (
     <section className="relative isolate overflow-hidden bg-[#061426]">
-      {/* MOBILE: stacked image card + text card (no overlap). Top padding clears the fixed nav. */}
+      {/* MOBILE: one block — image (framed on her face) then text directly below, no overlap. */}
       <div className="pt-[88px] lg:hidden">
-        <div className="relative h-[40svh] w-full overflow-hidden">
+        <div className="relative aspect-[4/3] w-full overflow-hidden">
           <Image
             src={img}
             alt="Dr Payvand Menhadji"
             fill
             priority={home}
             sizes="100vw"
-            className="object-cover object-[74%_26%]"
+            className="scale-110 object-cover object-[82%_22%]"
           />
-          <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(6,20,38,0.55)_0%,transparent_50%)]" />
-          <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#d7b36f]/60 to-transparent" />
         </div>
-        <div className="px-5 pb-12 pt-6 sm:px-8">
+        <div className="px-5 pb-12 pt-7 sm:px-8">
           {preheading ? (
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#d7b36f]">{preheading}</p>
           ) : null}
