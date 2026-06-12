@@ -26,7 +26,7 @@ export function PremiumHero({ preheading, title, children, home = false, image }
           className="scale-105 object-cover object-[78%_8%]"
         />
         <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(6,20,38,0.92)_0%,rgba(6,20,38,0.55)_28%,rgba(6,20,38,0)_55%)]" />
-        <div className="absolute inset-x-0 bottom-0 px-5 pb-8 sm:px-8">
+        <div className="absolute inset-x-0 bottom-0 px-5 pb-3 sm:px-8">
           {preheading ? (
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#d7b36f]">{preheading}</p>
           ) : null}
