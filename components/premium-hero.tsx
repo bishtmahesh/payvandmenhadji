@@ -15,18 +15,18 @@ export function PremiumHero({ preheading, title, children, home = false, image }
 
   return (
     <section className="relative isolate overflow-hidden bg-[#061426]">
-      {/* MOBILE / small devices: overlay hero — her face up top, text in the space below (not over her face). */}
-      <div className="relative min-h-[92svh] overflow-hidden lg:hidden">
+      {/* MOBILE / small devices: overlay hero — her face raised to the top, text in the space below (never over her face). */}
+      <div className="relative min-h-[100svh] overflow-hidden lg:hidden">
         <Image
           src={img}
           alt="Dr Payvand Menhadji"
           fill
           priority={home}
           sizes="100vw"
-          className="scale-110 object-cover object-[78%_16%]"
+          className="scale-105 object-cover object-[78%_0%]"
         />
-        {/* Bottom gradient keeps the text legible while leaving her face (upper area) clear */}
-        <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(6,20,38,0.95)_0%,rgba(6,20,38,0.6)_30%,rgba(6,20,38,0)_56%)]" />
+        {/* Solid navy across the lower half so text sits well below her face and stays legible */}
+        <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(6,20,38,0.97)_0%,rgba(6,20,38,0.97)_30%,rgba(6,20,38,0.55)_45%,rgba(6,20,38,0)_62%)]" />
         <div className="absolute inset-x-0 bottom-0 px-5 pb-14 sm:px-8">
           {preheading ? (
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#d7b36f]">{preheading}</p>
