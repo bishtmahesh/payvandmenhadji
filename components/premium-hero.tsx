@@ -15,8 +15,8 @@ export function PremiumHero({ preheading, title, children, home = false, image }
 
   return (
     <section className="relative isolate overflow-hidden bg-[#061426]">
-      {/* MOBILE: stacked image card + text card (no overlap) */}
-      <div className="lg:hidden">
+      {/* MOBILE: stacked image card + text card (no overlap). Top padding clears the fixed nav. */}
+      <div className="pt-[88px] lg:hidden">
         <div className="relative h-[40svh] w-full overflow-hidden">
           <Image
             src={img}
