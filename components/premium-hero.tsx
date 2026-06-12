@@ -15,19 +15,19 @@ export function PremiumHero({ preheading, title, children, home = false, image }
 
   return (
     <section className="relative isolate overflow-hidden bg-[#061426]">
-      {/* MOBILE: one block — image (framed on her face) then text directly below, no overlap. */}
-      <div className="pt-[88px] lg:hidden">
-        <div className="relative aspect-[4/3] w-full overflow-hidden">
-          <Image
-            src={img}
-            alt="Dr Payvand Menhadji"
-            fill
-            priority={home}
-            sizes="100vw"
-            className="scale-110 object-cover object-[82%_22%]"
-          />
-        </div>
-        <div className="px-5 pb-12 pt-7 sm:px-8">
+      {/* MOBILE / small devices: overlay hero — her face up top, text in the space below (not over her face). */}
+      <div className="relative min-h-[92svh] overflow-hidden lg:hidden">
+        <Image
+          src={img}
+          alt="Dr Payvand Menhadji"
+          fill
+          priority={home}
+          sizes="100vw"
+          className="scale-110 object-cover object-[78%_16%]"
+        />
+        {/* Bottom gradient keeps the text legible while leaving her face (upper area) clear */}
+        <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(6,20,38,0.95)_0%,rgba(6,20,38,0.6)_30%,rgba(6,20,38,0)_56%)]" />
+        <div className="absolute inset-x-0 bottom-0 px-5 pb-14 sm:px-8">
           {preheading ? (
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#d7b36f]">{preheading}</p>
           ) : null}
