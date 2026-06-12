@@ -15,21 +15,18 @@ export function PremiumHero({ preheading, title, children, home = false, image }
 
   return (
     <section className="relative isolate overflow-hidden bg-[#061426]">
-      {/* MOBILE / small devices: image on top (fades into navy), text BELOW it — can never overlap her face. */}
-      <div className="pt-[88px] lg:hidden">
-        <div className="relative h-[50svh] w-full overflow-hidden">
-          <Image
-            src={img}
-            alt="Dr Payvand Menhadji"
-            fill
-            priority={home}
-            sizes="100vw"
-            className="scale-105 object-cover object-[78%_18%]"
-          />
-          {/* fade the bottom of the image into the navy text area */}
-          <div className="absolute inset-x-0 bottom-0 h-28 bg-[linear-gradient(0deg,#061426_0%,rgba(6,20,38,0)_100%)]" />
-        </div>
-        <div className="px-5 pb-14 pt-7 sm:px-8">
+      {/* MOBILE / small devices: overlay hero — text sits low on the image, below her face. */}
+      <div className="relative min-h-[100svh] overflow-hidden lg:hidden">
+        <Image
+          src={img}
+          alt="Dr Payvand Menhadji"
+          fill
+          priority={home}
+          sizes="100vw"
+          className="scale-105 object-cover object-[78%_8%]"
+        />
+        <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(6,20,38,0.92)_0%,rgba(6,20,38,0.55)_28%,rgba(6,20,38,0)_55%)]" />
+        <div className="absolute inset-x-0 bottom-0 px-5 pb-8 sm:px-8">
           {preheading ? (
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#d7b36f]">{preheading}</p>
           ) : null}
