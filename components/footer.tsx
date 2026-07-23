@@ -37,7 +37,7 @@ function MixedColumn({ title, items }: { title: string; items: { label: string; 
   );
 }
 
-// Display-only column — items are listed but do not link anywhere.
+// Display-only column: items are listed but do not link anywhere.
 function TextColumn({ title, items }: { title: string; items: { label: string }[] }) {
   return (
     <div>
@@ -69,7 +69,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-[#f8f2e8]/10 px-5 py-5 text-center text-xs text-[#eee2d1]/62 sm:px-8">
-        © Dr Payvand Menhadji · Digital marketing partner —{" "}
+        © Dr Payvand Menhadji · Digital marketing partner:{" "}
         <a
           href="https://remedo.io"
           target="_blank"

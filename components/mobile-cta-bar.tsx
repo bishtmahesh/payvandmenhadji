@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-// Sticky bottom CTA bar — mobile only. Reveals after the first fold is scrolled past.
+// Sticky bottom CTA bar, mobile only. Reveals after the first fold is scrolled past.
 export function MobileCtaBar() {
   const [show, setShow] = useState(false);
 

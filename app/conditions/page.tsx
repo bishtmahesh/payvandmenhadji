@@ -25,14 +25,14 @@ export default function ConditionsPage() {
         <Container>
           <Reveal className="mb-12 max-w-3xl">
             <p className="text-xl leading-9 text-[#34383a]">
-              Most gum problems develop slowly and without pain — which is why so many are caught late. The pages below explain the conditions I treat most often, what causes them, and what can be done. If anything sounds familiar, please book a consultation rather than wait.
+              Most gum problems develop slowly and without pain, which is why so many are caught late. The pages below explain the conditions I treat most often, what causes them, and what can be done. If anything sounds familiar, please book a consultation rather than wait.
             </p>
           </Reveal>
           <IndexGrid base="/conditions" items={conditions} />
         </Container>
       </Section>
 
-      <DarkCta title="Does any of this sound familiar?" copy="If it does, the next step is a consultation — not a wait. We will explain what is happening and what your options are.">
+      <DarkCta title="Does any of this sound familiar?" copy="If it does, the next step is a consultation, not a wait. We will explain what is happening and what your options are.">
         <Button href="/contact" variant="dark">Book a consultation</Button>
         <Button href="/for-dentists" variant="ghostDark">Refer a patient</Button>
       </DarkCta>

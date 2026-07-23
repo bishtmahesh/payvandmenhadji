@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Specialist Periodontist London | Dr Payvand Menhadji",
     description:
-      "Specialist periodontal and implant care in London — gum disease, gum grafting, dental implants and peri-implantitis.",
+      "Specialist periodontal and implant care in London: gum disease, gum grafting, dental implants and peri-implantitis.",
     images: ["/images/dr-payvand-hero.png"],
   },
 };

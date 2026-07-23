@@ -25,7 +25,7 @@ export default function TreatmentsPage() {
         <Container>
           <Reveal className="mb-12 max-w-3xl">
             <p className="text-xl leading-9 text-[#34383a]">
-              Below is the full range of treatments I provide. Each one is offered only after a full diagnostic consultation — there is no standard plan. Select any treatment to read what it involves, what to expect, and how it is approached.
+              Below is the full range of treatments I provide. Each one is offered only after a full diagnostic consultation, as there is no standard plan. Select any treatment to read what it involves, what to expect, and how it is approached.
             </p>
           </Reveal>
           <IndexGrid base="/treatments" items={treatments} />

@@ -24,7 +24,7 @@ export default function GumGraftingPage() {
         </p>
       </PremiumHero>
 
-      {/* What it is — editorial two-column */}
+      {/* What it is: editorial two-column */}
       <Section>
         <Container className="grid items-start gap-12 lg:grid-cols-[1.18fr_0.82fr]">
           <Reveal>
@@ -33,10 +33,10 @@ export default function GumGraftingPage() {
               Rebuilding lost tissue with biological respect.
             </h2>
             <p className="mt-8 text-xl leading-9 text-[#34383a]">
-              When the gum has receded — exposing the root, causing sensitivity, or making a tooth look longer than its neighbour — grafting can rebuild the lost tissue. The technique used depends on the cause of the recession and what we are trying to achieve: root coverage, thicker gum to prevent further recession, or both.
+              When the gum has receded, exposing the root, causing sensitivity, or making a tooth look longer than its neighbour, grafting can rebuild the lost tissue. The technique used depends on the cause of the recession and what we are trying to achieve: root coverage, thicker gum to prevent further recession, or both.
             </p>
             <blockquote className="mt-10 border-l border-[#b88742] pl-7 font-display text-3xl leading-snug text-[#0b1422]">
-              The choice of technique follows the biological and aesthetic objective — not the other way around.
+              The choice of technique follows the biological and aesthetic objective, not the other way around.
             </blockquote>
           </Reveal>
           <Reveal>
@@ -68,7 +68,7 @@ export default function GumGraftingPage() {
                 Mild, stable recession is often best <strong className="font-semibold text-[#0b1422]">monitored</strong> rather than treated. Where it is advancing, causing sensitivity, or affecting the appearance of your smile, grafting can restore the lost tissue and protect the tooth over the long term.
               </p>
               <p>
-                Modern techniques are far less invasive than they once were, and treatment is always planned around the individual mouth — with realistic, honest expectations discussed before anything begins.
+                Modern techniques are far less invasive than they once were, and treatment is always planned around the individual mouth, with realistic, honest expectations discussed before anything begins.
               </p>
             </div>
           </Reveal>
@@ -86,7 +86,7 @@ export default function GumGraftingPage() {
               </h2>
             </div>
             <p className="max-w-3xl text-lg leading-8 text-[#34383a]">
-              The plan is shaped by tissue thickness, recession pattern, tooth position, hygiene access, and the desired long-term outcome — using the least invasive approach that achieves a stable result.
+              The plan is shaped by tissue thickness, recession pattern, tooth position, hygiene access, and the desired long-term outcome, using the least invasive approach that achieves a stable result.
             </p>
           </Reveal>
           <Reveal>
@@ -149,7 +149,7 @@ export default function GumGraftingPage() {
 
       <DarkCta
         title="Discuss gum recession with a specialist."
-        copy="A calm, considered first step — for patients and referring dentists alike."
+        copy="A calm, considered first step, for patients and referring dentists alike."
       >
         <Button href="/contact" variant="dark">Book a consultation</Button>
         <Button href="/for-dentists" variant="ghostDark">Refer a patient</Button>

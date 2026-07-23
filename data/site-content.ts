@@ -41,13 +41,13 @@ export const treatments: ContentPage[] = [
         kind: "prose",
         eyebrow: "What It Is",
         heading: "The foundation of periodontal care.",
-        body: "Non-surgical periodontal therapy — sometimes called deep cleaning or root surface debridement — is the foundation of periodontal care. The aim is to remove the bacterial biofilm and hardened deposits from beneath the gum line, allowing inflamed tissues to heal and the pockets around the teeth to shrink.",
+        body: "Non-surgical periodontal therapy, sometimes called deep cleaning or root surface debridement, is the foundation of periodontal care. The aim is to remove the bacterial biofilm and hardened deposits from beneath the gum line, allowing inflamed tissues to heal and the pockets around the teeth to shrink.",
       },
       {
         kind: "prose",
         eyebrow: "Who It Is For",
         heading: "Gum disease at any stage.",
-        body: "Patients with gingivitis or periodontitis at any stage. For most people with gum disease, this is the first — and often the only — treatment required.",
+        body: "Patients with gingivitis or periodontitis at any stage. For most people with gum disease, this is the first, and often the only, treatment required.",
       },
       {
         kind: "accordion",
@@ -84,7 +84,7 @@ export const treatments: ContentPage[] = [
         kind: "prose",
         eyebrow: "What It Is",
         heading: "Access where it is needed.",
-        body: "In a minority of cases, gum disease leaves behind deep pockets or defects that cannot be reached or resolved without lifting the gum tissue. Periodontal surgery is a targeted, day-case procedure performed under local anaesthetic — often a single visit per area of the mouth — to gain access to the root surface and reshape or regenerate the supporting tissues.",
+        body: "In a minority of cases, gum disease leaves behind deep pockets or defects that cannot be reached or resolved without lifting the gum tissue. Periodontal surgery is a targeted, day-case procedure performed under local anaesthetic, often a single visit per area of the mouth, to gain access to the root surface and reshape or regenerate the supporting tissues.",
       },
       {
         kind: "cards",
@@ -124,7 +124,7 @@ export const treatments: ContentPage[] = [
         kind: "prose",
         eyebrow: "What It Is",
         heading: "Rebuilding lost tissue with biological respect.",
-        body: "When the gum has receded — exposing the root, causing sensitivity, or making a tooth look longer than its neighbour — grafting can rebuild the lost tissue. The technique used depends on the cause of the recession and what we are trying to achieve: root coverage, thicker gum to prevent further recession, or both.",
+        body: "When the gum has receded, exposing the root, causing sensitivity, or making a tooth look longer than its neighbour, grafting can rebuild the lost tissue. The technique used depends on the cause of the recession and what we are trying to achieve: root coverage, thicker gum to prevent further recession, or both.",
       },
       {
         kind: "cards",
@@ -171,7 +171,7 @@ export const treatments: ContentPage[] = [
         kind: "prose",
         eyebrow: "Honest Expectations",
         heading: "Not a universal solution.",
-        body: "Regeneration works best in specific defect shapes and in patients with controlled disease, good oral hygiene and no active smoking. Where indicated, it can save teeth that would otherwise need to be extracted — but it is not suitable for every case, and that is discussed honestly at consultation.",
+        body: "Regeneration works best in specific defect shapes and in patients with controlled disease, good oral hygiene and no active smoking. Where indicated, it can save teeth that would otherwise need to be extracted, but it is not suitable for every case, and that is discussed honestly at consultation.",
       },
     ],
     ctaTitle: "See whether regeneration is suitable.",
@@ -183,7 +183,7 @@ export const treatments: ContentPage[] = [
     metaDescription:
       "Aesthetic and functional crown lengthening to reshape the gum line or save a damaged tooth.",
     preheading: "Treatments",
-    heroTitle: "Reshaping the gum line — for a better smile or to save a tooth.",
+    heroTitle: "Reshaping the gum line, for a better smile or to save a tooth.",
     summary: "Aesthetic reshaping for a gummy smile, or functional lengthening to make a tooth restorable.",
     blocks: [
       {
@@ -191,8 +191,8 @@ export const treatments: ContentPage[] = [
         eyebrow: "Two Objectives",
         heading: "Aesthetic and functional.",
         items: [
-          { title: "Aesthetic crown lengthening", text: "For a gummy smile or uneven tooth heights, the gum line — and sometimes the underlying bone — is reshaped to reveal more of the natural tooth, for a balanced smile without changing the teeth themselves." },
-          { title: "Functional crown lengthening", text: "When a tooth is broken or decayed near the gum line, repositioning the gum and bone creates the space a crown or filling needs — often turning an unrestorable tooth into a restorable one." },
+          { title: "Aesthetic crown lengthening", text: "For a gummy smile or uneven tooth heights, the gum line, and sometimes the underlying bone, is reshaped to reveal more of the natural tooth, for a balanced smile without changing the teeth themselves." },
+          { title: "Functional crown lengthening", text: "When a tooth is broken or decayed near the gum line, repositioning the gum and bone creates the space a crown or filling needs, often turning an unrestorable tooth into a restorable one." },
         ],
       },
       {
@@ -222,7 +222,7 @@ export const treatments: ContentPage[] = [
         kind: "prose",
         eyebrow: "What It Is",
         heading: "The closest thing to a natural tooth.",
-        body: "A dental implant is a small titanium fixture that integrates with the jawbone to support a crown, bridge or denture. Implants are the closest thing modern dentistry has to a natural tooth — but only when they are planned and placed with care.",
+        body: "A dental implant is a small titanium fixture that integrates with the jawbone to support a crown, bridge or denture. Implants are the closest thing modern dentistry has to a natural tooth, but only when they are planned and placed with care.",
       },
       {
         kind: "list",
@@ -257,13 +257,13 @@ export const treatments: ContentPage[] = [
       "Specialist treatment for failing dental implants. Non-surgical and surgical management of peri-implantitis.",
     preheading: "Treatments",
     heroTitle: "Saving implants that are in trouble.",
-    summary: "Specialist management of infection around implants — one of the most common reasons for referral.",
+    summary: "Specialist management of infection around implants, one of the most common reasons for referral.",
     blocks: [
       {
         kind: "prose",
         eyebrow: "What It Is",
         heading: "Gum disease around an implant.",
-        body: "Peri-implantitis is gum disease around a dental implant. It can develop years after the implant was placed — often silently — and is one of the most common reasons dentists refer to me. Left untreated, it leads to bone loss and eventually loss of the implant itself.",
+        body: "Peri-implantitis is gum disease around a dental implant. It can develop years after the implant was placed, often silently, and is one of the most common reasons dentists refer to me. Left untreated, it leads to bone loss and eventually loss of the implant itself.",
       },
       {
         kind: "list",
@@ -272,7 +272,7 @@ export const treatments: ContentPage[] = [
         items: [
           { title: "Full diagnostic assessment", text: "Including specialist imaging." },
           { title: "Non-surgical decontamination", text: "Of the implant surface where the disease is early." },
-          { title: "Surgical access", text: "Decontamination — sometimes combined with regeneration — for more advanced cases." },
+          { title: "Surgical access", text: "Decontamination, sometimes combined with regeneration, for more advanced cases." },
           { title: "Long-term maintenance", text: "A plan to keep the implant stable." },
         ],
       },
@@ -280,7 +280,7 @@ export const treatments: ContentPage[] = [
         kind: "prose",
         eyebrow: "Outcomes",
         heading: "The right time to ask is early.",
-        body: "Many implants can be saved if treated early. The right time to ask about peri-implantitis is at the first sign of bleeding, recession or discomfort around an implant — not when it is loose.",
+        body: "Many implants can be saved if treated early. The right time to ask about peri-implantitis is at the first sign of bleeding, recession or discomfort around an implant, not when it is loose.",
       },
     ],
     ctaTitle: "Book an assessment.",
@@ -299,7 +299,7 @@ export const treatments: ContentPage[] = [
         kind: "prose",
         eyebrow: "What It Is",
         heading: "Restoring lost volume.",
-        body: "When a tooth has been missing for some time, the bone that used to hold it shrinks. Bone grafting and ridge augmentation rebuild that lost volume so that a dental implant can be placed in the correct position — not just wherever there happens to be bone.",
+        body: "When a tooth has been missing for some time, the bone that used to hold it shrinks. Bone grafting and ridge augmentation rebuild that lost volume so that a dental implant can be placed in the correct position, not just wherever there happens to be bone.",
       },
       {
         kind: "cards",
@@ -339,7 +339,7 @@ export const conditions: ContentPage[] = [
         eyebrow: "Signs To Look For",
         heading: "What to watch for.",
         items: [
-          "Bleeding when you brush or floss — never normal, even occasionally.",
+          "Bleeding when you brush or floss: never normal, even occasionally.",
           "Red, swollen or tender gums.",
           "Gums that look as though they are pulling away from the teeth.",
           "Persistent bad breath.",
@@ -350,7 +350,7 @@ export const conditions: ContentPage[] = [
         kind: "prose",
         eyebrow: "What Can Be Done",
         heading: "Caught early, it can be stopped.",
-        body: "Caught early, gingivitis is fully reversible. Periodontitis cannot be reversed — but in almost every case it can be stopped, and most patients keep their teeth for life with the right care. Treatment starts with non-surgical periodontal therapy; surgery is only required in a minority of cases.",
+        body: "Caught early, gingivitis is fully reversible. Periodontitis cannot be reversed, but in almost every case it can be stopped, and most patients keep their teeth for life with the right care. Treatment starts with non-surgical periodontal therapy; surgery is only required in a minority of cases.",
       },
     ],
     ctaTitle: "Have your gums assessed.",
@@ -394,7 +394,7 @@ export const conditions: ContentPage[] = [
   {
     slug: "bleeding-gums",
     navLabel: "Bleeding Gums",
-    metaTitle: "Bleeding Gums — Causes & Treatment | London Periodontist",
+    metaTitle: "Bleeding Gums: Causes & Treatment | London Periodontist",
     metaDescription:
       "Bleeding gums are the earliest sign of gum disease. A London Specialist Periodontist explains the causes and what to do.",
     preheading: "Conditions",
@@ -422,7 +422,7 @@ export const conditions: ContentPage[] = [
         kind: "prose",
         eyebrow: "What To Do",
         heading: "Have it checked.",
-        body: "If your gums have been bleeding for more than a week, please have them checked — by your dentist, hygienist, or directly by a periodontist. Most cases settle quickly with the right cleaning and a tailored home-care routine.",
+        body: "If your gums have been bleeding for more than a week, please have them checked, by your dentist, hygienist, or directly by a periodontist. Most cases settle quickly with the right cleaning and a tailored home-care routine.",
       },
     ],
     ctaTitle: "Get bleeding gums checked.",
@@ -430,7 +430,7 @@ export const conditions: ContentPage[] = [
   {
     slug: "loose-teeth",
     navLabel: "Loose Teeth",
-    metaTitle: "Loose Teeth in Adults — Causes & Treatment | London",
+    metaTitle: "Loose Teeth in Adults: Causes & Treatment | London",
     metaDescription:
       "In adults, teeth should never feel loose. A London Specialist Periodontist explains the causes and how loose teeth can be stabilised.",
     preheading: "Conditions",
@@ -447,7 +447,7 @@ export const conditions: ContentPage[] = [
         kind: "prose",
         eyebrow: "What Can Be Done",
         heading: "Many loose teeth can be kept.",
-        body: "The right treatment depends on the cause. Many loose teeth can be stabilised and kept long-term with a combination of periodontal therapy, bite adjustment and splinting. Some require surgery. A small number cannot be saved — and where that is the case, replacing the tooth with an implant is usually the best long-term option.",
+        body: "The right treatment depends on the cause. Many loose teeth can be stabilised and kept long-term with a combination of periodontal therapy, bite adjustment and splinting. Some require surgery. A small number cannot be saved, and where that is the case, replacing the tooth with an implant is usually the best long-term option.",
       },
     ],
     ctaTitle: "Have loose teeth assessed.",
@@ -455,24 +455,24 @@ export const conditions: ContentPage[] = [
   {
     slug: "bad-breath",
     navLabel: "Bad Breath (Halitosis)",
-    metaTitle: "Bad Breath (Halitosis) — Causes & Treatment | London",
+    metaTitle: "Bad Breath (Halitosis): Causes & Treatment | London",
     metaDescription:
       "Persistent bad breath is almost always caused by something in the mouth. A London Specialist Periodontist explains the causes and treatment.",
     preheading: "Conditions",
     heroTitle: "Persistent bad breath, properly diagnosed.",
-    summary: "Almost always caused by something in the mouth — most often the bacteria of gum disease.",
+    summary: "Almost always caused by something in the mouth, most often the bacteria of gum disease.",
     blocks: [
       {
         kind: "prose",
         eyebrow: "What It Is",
         heading: "Usually a sign from the mouth.",
-        body: "Persistent bad breath is almost always caused by something in the mouth — most commonly the bacteria associated with gum disease, decay, or coatings on the tongue. Less often, it has a systemic cause.",
+        body: "Persistent bad breath is almost always caused by something in the mouth, most commonly the bacteria associated with gum disease, decay, or coatings on the tongue. Less often, it has a systemic cause.",
       },
       {
         kind: "prose",
         eyebrow: "What Can Be Done",
         heading: "Treat the source.",
-        body: "A specialist assessment will identify the source. Treating the underlying cause — usually gum disease — resolves it in the great majority of patients.",
+        body: "A specialist assessment will identify the source. Treating the underlying cause, usually gum disease, resolves it in the great majority of patients.",
       },
     ],
     ctaTitle: "Find the cause.",
@@ -480,18 +480,18 @@ export const conditions: ContentPage[] = [
   {
     slug: "peri-implantitis",
     navLabel: "Peri-implantitis",
-    metaTitle: "Peri-implantitis — Signs & Treatment | London Specialist",
+    metaTitle: "Peri-implantitis: Signs & Treatment | London Specialist",
     metaDescription:
       "Peri-implantitis is gum disease around a dental implant. Learn the signs and how it is treated by a London Specialist Periodontist.",
     preheading: "Conditions",
     heroTitle: "Gum disease around an implant.",
-    summary: "Like its cousin around natural teeth, it is usually painless — until it isn't.",
+    summary: "Like its cousin around natural teeth, it is usually painless, until it isn't.",
     blocks: [
       {
         kind: "prose",
         eyebrow: "What It Is",
         heading: "Often silent, until late.",
-        body: "Peri-implantitis is gum disease around a dental implant. Like its cousin around natural teeth, it is usually painless — until it isn't.",
+        body: "Peri-implantitis is gum disease around a dental implant. Like its cousin around natural teeth, it is usually painless, until it isn't.",
       },
       {
         kind: "bullets",
@@ -508,7 +508,7 @@ export const conditions: ContentPage[] = [
         kind: "prose",
         eyebrow: "What Can Be Done",
         heading: "Caught early, it can be controlled.",
-        body: "Caught early, peri-implantitis can be controlled non-surgically. More advanced cases require surgical decontamination and, in some cases, regeneration of the lost bone. Routine monitoring of every implant — annually, at a minimum — is the best way to catch it in time.",
+        body: "Caught early, peri-implantitis can be controlled non-surgically. More advanced cases require surgical decontamination and, in some cases, regeneration of the lost bone. Routine monitoring of every implant, annually at a minimum, is the best way to catch it in time.",
       },
     ],
     ctaTitle: "Protect your implant.",
@@ -516,7 +516,7 @@ export const conditions: ContentPage[] = [
   {
     slug: "missing-teeth",
     navLabel: "Missing Teeth",
-    metaTitle: "Missing Teeth — Replacement Options | London Periodontist",
+    metaTitle: "Missing Teeth: Replacement Options | London Periodontist",
     metaDescription:
       "A missing tooth is more than cosmetic. A London Specialist Periodontist explains implants, bridges and dentures.",
     preheading: "Conditions",
@@ -527,7 +527,7 @@ export const conditions: ContentPage[] = [
         kind: "prose",
         eyebrow: "What It Is",
         heading: "What happens after a tooth is lost.",
-        body: "A missing tooth is more than a cosmetic problem. Over time, neighbouring teeth tilt into the gap, the opposing tooth over-erupts, and the bone in the gap shrinks — making any future replacement harder.",
+        body: "A missing tooth is more than a cosmetic problem. Over time, neighbouring teeth tilt into the gap, the opposing tooth over-erupts, and the bone in the gap shrinks, making any future replacement harder.",
       },
       {
         kind: "cards",

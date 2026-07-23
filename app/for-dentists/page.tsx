@@ -10,7 +10,7 @@ import { Reveal } from "@/components/reveal";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Referrals — Specialist Periodontist London | Dr Menhadji",
+  title: "Referrals: Specialist Periodontist London | Dr Menhadji",
   description:
     "Refer your patients for specialist periodontal and implant care in London. Online referral form and clear reporting.",
 };

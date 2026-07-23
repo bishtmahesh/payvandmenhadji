@@ -15,7 +15,7 @@ export function PremiumHero({ preheading, title, children, home = false, image }
 
   return (
     <section className="relative isolate overflow-hidden bg-[#061426]">
-      {/* MOBILE / small devices: overlay hero — text sits low on the image, below her face. */}
+      {/* MOBILE / small devices: overlay hero, text sits low on the image, below her face. */}
       <div className="relative min-h-[100svh] overflow-hidden lg:hidden">
         <Image
           src={img}

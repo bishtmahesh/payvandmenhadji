@@ -48,9 +48,9 @@ export function Checkbox({ label, name }: { label: string; name: string }) {
   );
 }
 
-export function FormPanel({ children }: { children: ReactNode }) {
+export function FormPanel({ children, shadow = true }: { children: ReactNode; shadow?: boolean }) {
   return (
-    <form className="luxury-shadow grid gap-8 border border-[#dacbb8] bg-[#fbf7ef]/88 p-6 sm:p-10">
+    <form className={`grid gap-8 border border-[#dacbb8] bg-[#fbf7ef]/88 p-6 sm:p-10 ${shadow ? "luxury-shadow" : ""}`}>
       {children}
     </form>
   );

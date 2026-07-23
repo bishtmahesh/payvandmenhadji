@@ -65,7 +65,7 @@ export default function FeesPage() {
           </Reveal>
           <Reveal>
             <p className="max-w-3xl text-xl leading-9 text-[#34383a]">
-              Fees are payable at each appointment by card or bank transfer. Many private health insurers contribute toward specialist periodontal and implant care — please contact your insurer in advance to confirm cover.
+              Fees are payable at each appointment by card or bank transfer. Many private health insurers contribute toward specialist periodontal and implant care, so please contact your insurer in advance to confirm cover.
             </p>
           </Reveal>
         </Container>

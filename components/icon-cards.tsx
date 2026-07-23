@@ -14,7 +14,7 @@ export function IconCards({
         return (
           <article
             key={item.title}
-            className={`group luxury-shadow border p-7 transition duration-500 hover:-translate-y-1 ${
+            className={`group border p-7 transition duration-500 hover:-translate-y-1 ${
               dark
                 ? "border-[#f8f2e8]/12 bg-[#0b2138]/55 text-[#f8f2e8] hover:border-[#d7b36f]/45"
                 : "border-[#dacbb8] bg-[#fbf7ef]/78 text-[#0b1422] hover:border-[#b88742]/55 hover:bg-[#fbf7ef]"

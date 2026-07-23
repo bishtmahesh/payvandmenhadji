@@ -20,6 +20,7 @@ const linkedTreatments = ["/treatments/dental-implants"];
 const navItems: NavItem[] = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
+  { label: "Clinics", href: "/clinics" },
   {
     label: "Treatments",
     menu: treatmentsNav.map((t) => ({
@@ -35,6 +36,7 @@ const navItems: NavItem[] = [
 const mobileNav = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
+  { label: "Clinics", href: "/clinics" },
   {
     label: "Treatments",
     children: treatmentsNav.map((t) => ({
