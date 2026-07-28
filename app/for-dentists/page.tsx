@@ -10,7 +10,7 @@ import { Reveal } from "@/components/reveal";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Referrals: Specialist Periodontist London | Dr Menhadji",
+  title: "Referrals: Specialist Periodontist London | Dr Payvand Menhadji",
   description:
     "Refer your patients for specialist periodontal and implant care in London. Online referral form and clear reporting.",
 };
@@ -103,7 +103,7 @@ export default function ForDentistsPage() {
               Send a referral.
             </h2>
             <p className="mt-6 text-lg leading-8 text-[#34383a]">
-              This frontend prototype is ready for routing to Dr Menhadji and a selected practice once the operational workflow is confirmed.
+              This frontend prototype is ready for routing to Dr Payvand Menhadji and a selected practice once the operational workflow is confirmed.
             </p>
           </Reveal>
           <Reveal>
@@ -168,7 +168,7 @@ export default function ForDentistsPage() {
           </Reveal>
           <Reveal>
             <p className="text-xl leading-9 text-[#34383a]">
-              Dr Menhadji is available for selected study club and CPD evening enquiries where periodontal diagnosis, soft tissue management, implant maintenance, and referral planning would support the audience.
+              Dr Payvand Menhadji is available for selected study club and CPD evening enquiries where periodontal diagnosis, soft tissue management, implant maintenance, and referral planning would support the audience.
             </p>
             <div className="mt-8">
               <Button href="/contact" variant="secondary">Professional enquiry</Button>

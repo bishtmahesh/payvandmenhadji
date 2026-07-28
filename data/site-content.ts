@@ -29,7 +29,7 @@ export const treatments: ContentPage[] = [
   {
     slug: "periodontal-therapy",
     navLabel: "Periodontal Therapy",
-    metaTitle: "Non-surgical Gum Treatment in London | Dr Menhadji",
+    metaTitle: "Non-surgical Gum Treatment in London | Dr Payvand Menhadji",
     metaDescription:
       "Specialist non-surgical periodontal therapy in London. Effective treatment for gingivitis and periodontitis. Book a consultation.",
     preheading: "Treatments",
@@ -154,7 +154,7 @@ export const treatments: ContentPage[] = [
   {
     slug: "periodontal-regeneration",
     navLabel: "Periodontal Regeneration",
-    metaTitle: "Periodontal Regeneration London | Dr Menhadji",
+    metaTitle: "Periodontal Regeneration London | Dr Payvand Menhadji",
     metaDescription:
       "Guided tissue regeneration and biologic materials to partly rebuild bone and ligament lost to periodontitis, in selected cases.",
     preheading: "Treatments",
@@ -252,7 +252,7 @@ export const treatments: ContentPage[] = [
   {
     slug: "peri-implantitis",
     navLabel: "Treatment of Peri-implantitis",
-    metaTitle: "Peri-implantitis Treatment London | Dr Menhadji",
+    metaTitle: "Peri-implantitis Treatment London | Dr Payvand Menhadji",
     metaDescription:
       "Specialist treatment for failing dental implants. Non-surgical and surgical management of peri-implantitis.",
     preheading: "Treatments",
@@ -358,7 +358,7 @@ export const conditions: ContentPage[] = [
   {
     slug: "gum-recession",
     navLabel: "Gum Recession",
-    metaTitle: "Gum Recession Treatment London | Dr Menhadji",
+    metaTitle: "Gum Recession Treatment London | Dr Payvand Menhadji",
     metaDescription:
       "What causes gum recession, why it matters and how it can be treated by a Specialist Periodontist in London.",
     preheading: "Conditions",

@@ -17,7 +17,7 @@ export default function AboutPage() {
   return (
     <main>
       <PremiumHero
-        preheading="About Dr Menhadji"
+        preheading="About Dr Payvand Menhadji"
         title="Specialist Periodontist. Researcher. Educator."
       >
         <div className="max-w-xl space-y-2">
@@ -35,7 +35,7 @@ export default function AboutPage() {
           <Reveal>
             <EditorialImagePlaceholder
               label="Dr Payvand Menhadji"
-              intent="Conversational portrait of Dr Menhadji with warmth and specialist poise."
+              intent="Conversational portrait of Dr Payvand Menhadji with warmth and specialist poise."
               className="aspect-[4/5]"
               src="/images/dr-payvand-hero.png"
               position="object-[76%_20%] scale-135"

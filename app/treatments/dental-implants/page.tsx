@@ -137,7 +137,7 @@ export default function DentalImplantsPage() {
               Most healthy adults missing one or more teeth are suitable. The best results come with healthy gums, enough bone to support the implant, and good oral hygiene. Smoking, uncontrolled diabetes or significant bone loss do not necessarily rule implants out, but may need assessment or preparatory treatment first.
             </p>
             <p className="mt-6 text-xl leading-9 text-[#34383a]">
-              As a periodontist, Dr Menhadji places particular emphasis on the health of the gums and bone before any implant is considered, which is what protects the result over the long term.
+              As a periodontist, Dr Payvand Menhadji places particular emphasis on the health of the gums and bone before any implant is considered, which is what protects the result over the long term.
             </p>
           </Reveal>
         </Container>

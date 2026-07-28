@@ -65,7 +65,7 @@ export default function Home() {
           </Reveal>
           <Reveal className="lg:pt-10">
             <p className="max-w-3xl text-xl leading-9 text-[#34383a]">
-              Dental concerns often begin at the gums. Dr Menhadji focuses on the tissues supporting teeth and implants, treating problems predictably to protect long-term stability.
+              Dental concerns often begin at the gums. Dr Payvand Menhadji focuses on the tissues supporting teeth and implants, treating problems predictably to protect long-term stability.
             </p>
             <div className="mt-12 grid gap-5 sm:grid-cols-3">
               {[
@@ -140,7 +140,7 @@ export default function Home() {
               A specialist partner for periodontal and implant referrals.
             </h2>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-[#34383a]">
-              Dr Menhadji works collaboratively with general dentists, restorative teams, and orthodontic colleagues, with clear reporting and patient handback where appropriate.
+              Dr Payvand Menhadji works collaboratively with general dentists, restorative teams, and orthodontic colleagues, with clear reporting and patient handback where appropriate.
             </p>
             <div className="mt-9">
               <Button href="/for-dentists" variant="secondary">Refer a patient</Button>

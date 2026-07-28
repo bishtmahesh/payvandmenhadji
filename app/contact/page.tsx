@@ -1,8 +1,9 @@
-import { Building2, MapPinned, Mic2, Send, Stethoscope } from "lucide-react";
+import { Building2, Mic2, Send, Stethoscope } from "lucide-react";
 import { Button } from "@/components/button";
 import { Field, FormPanel, TextArea } from "@/components/forms";
 import { IconCards } from "@/components/icon-cards";
 import { Container, Eyebrow, Section } from "@/components/layout";
+import { LocationBlock } from "@/components/location-block";
 import { PremiumHero } from "@/components/premium-hero";
 import { Reveal } from "@/components/reveal";
 import type { Metadata } from "next";
@@ -52,18 +53,73 @@ export default function ContactPage() {
       </Section>
 
       <Section className="bg-[#eee2d1]">
-        <Container className="flex flex-col justify-between gap-8 sm:flex-row sm:items-center">
-          <div>
-            <Eyebrow>Practice Locations</Eyebrow>
-            <h2 className="font-display text-5xl leading-tight text-[#0b1422] sm:text-6xl">
-              You can find me here.
-            </h2>
-            <p className="mt-5 flex items-center gap-3 text-lg leading-8 text-[#34383a]">
-              <MapPinned className="size-5 shrink-0 text-[#b88742]" strokeWidth={1.5} />
-              Seeing patients privately across five London clinics.
-            </p>
-          </div>
-          <Button href="/clinics" variant="secondary">View clinic locations</Button>
+        <Container>
+          <Reveal className="mb-8 flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
+            <div>
+              <Eyebrow>Practice Locations</Eyebrow>
+              <h2 className="font-display text-5xl text-[#0b1422]">Where to find me.</h2>
+              <p className="mt-5 max-w-xl leading-8 text-[#34383a]">
+                I see patients privately across central and west London. All consultations are by appointment.
+              </p>
+            </div>
+            <Button href="/clinics" variant="secondary">View clinic locations</Button>
+          </Reveal>
+          <Reveal>
+            <LocationBlock
+              location={{
+                practice: "Aspire Clinic",
+                area: "Mortimer Street",
+                address: "Mortimer Street, London",
+                transport: "Oxford Circus Station",
+                days: "Wednesday",
+                website: "https://www.theaspireclinic.com/",
+              }}
+            />
+            <LocationBlock
+              location={{
+                practice: "The Richmond Dentist",
+                area: "Richmond",
+                address: "20 Water Lane, Richmond, London TW9 1TJ",
+                transport: "Richmond Station",
+                days: "Tuesday",
+                website: "https://therichmonddentist.co.uk/",
+                logo: "/images/practices/richmond.png",
+              }}
+            />
+            <LocationBlock
+              location={{
+                practice: "Gardens Dental Centre",
+                area: "Kew",
+                address: "7 Royal Parade, Kew Gardens, Richmond TW9 3QD",
+                transport: "Kew Gardens Station",
+                days: "Monday",
+                website: "https://www.gardensdentalcentre.com/the-team/",
+                logo: "/images/practices/gardens.png",
+              }}
+            />
+            <LocationBlock
+              location={{
+                practice: "SW1 Dental Studio",
+                area: "Westminster, SW1",
+                address: "41–43 Great Peter Street, London SW1P 3LT",
+                transport: "Westminster Station",
+                days: "Thursday",
+                website: "https://www.sw1dentalstudio.co.uk/dr-payvand-menhadji",
+                logo: "/images/practices/sw1.png",
+              }}
+            />
+            <LocationBlock
+              location={{
+                practice: "Serene Dental",
+                area: "London",
+                address: "Address to be confirmed",
+                transport: "Knightsbridge Station",
+                days: "Wednesday",
+                website: "https://www.serenedental.co.uk/",
+                logo: "/images/practices/serene.jpg",
+              }}
+            />
+          </Reveal>
         </Container>
       </Section>
 
